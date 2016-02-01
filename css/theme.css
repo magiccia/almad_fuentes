@@ -206,10 +206,6 @@ body {
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ededed', GradientType=0 );
 }
 
-.col-sm-4 {
-    margin-top: 100px;
-}
-
 .row.bylines-container {
     margin-top: 50px;
     margin-bottom: 50px;
