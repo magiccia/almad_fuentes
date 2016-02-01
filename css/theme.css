@@ -8,6 +8,18 @@ body {
   padding-top: 170px; 
 }
 
+.container {
+    max-width: 750px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.section-container {
+    max-width: 750px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 .navbar {
     min-height: 85px;
 }
@@ -172,10 +184,6 @@ body {
     position: relative;
 }
 
-#content-container {
-    position: absolute;
-    top: 0;
-}
 
 .row.bylines-container {
     margin-top: 50px;
