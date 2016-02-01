@@ -7,7 +7,7 @@
     {% elif row.content_type  == "subhead" %}
         {{ build_subhead(row) }}    
     {% elif row.content_type  == "markup" %}
-        {{ build_markup(row.value) }}  
+        {{ build_markup(row.id, row.value) }}  
     {% elif row.content_type  == "image" %}
         {{ build_images(row, images) }}                  
     {% endif %}
@@ -55,12 +55,14 @@
 
 
 
-{% macro build_markup(markup) %}
+{% macro build_markup(id, markup) %}
+<div id="{{ id }}">
     {% if markup | regex_match("^_.+\.html$") %} {# if markup references a .html file, then pull markup from there #}
         {% include markup %}
     {% else %}
         {{ markup | safe }} {# otherwise, load markup directly in from the file #}
     {% endif %}
+</div>
 {% endmacro %}
 
 

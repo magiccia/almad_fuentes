@@ -4,18 +4,26 @@
  * For details, see http://www.apache.org/licenses/LICENSE-2.0.
  */
 
+body {
+  padding-top: 170px; 
+}
+
+.navbar {
+    min-height: 85px;
+}
 
 .navbar-custom {
     margin-bottom: 0;
     border-bottom: 1px solid rgba(255,255,255,.3);
-    text-transform: uppercase;
-    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
-    background-color: #000;
-    text-shadow: 2px 2px #3E3E3E;
+    background-color: #fff;
 }
 
 .navbar-custom .navbar-brand {
     font-weight: 700;
+}
+
+.navbar-custom .navbar-brand i{
+    margin-right: 8px;
 }
 
 .navbar-custom .navbar-brand:focus {
@@ -34,10 +42,14 @@
 }
 
 .navbar-custom a {
-    color: #fff;
+    color: #000;
 }
 
 .navbar-custom .nav li a {
+    font-family: 'Amatic SC', cursive;
+    text-transform: uppercase;
+    font-size: 20px;
+    margin-top: 20px;
     -webkit-transition: background .3s ease-in-out;
     -moz-transition: background .3s ease-in-out;
     transition: background .3s ease-in-out;
@@ -63,12 +75,13 @@
     background-color: rgba(255,255,255,.3);
 }
 
-.navbar-custom .nav li.active a:hover {
-    color: #fff;
+.navbar-custom .nav li a:hover {
+    color: #FF0BEE;
 }
 
 .navbar-header {
     color: #ffffff;
+    margin-top: 10px;
 }
 
 .navbar-nav.social-buttons li span.bigread-social-btn {
@@ -77,24 +90,28 @@
     display: block;
     float: left;
     font-size: 1.3em;
-    color: white;
+    color: #bfbfbf;
     cursor: pointer;
+    margin-top: 20px
 }
 
 .navbar-nav.social-buttons li span.bigread-social-btn .fa-twitter:hover {
-    color: #4099FF;
+    color: #bfbfbf;
 }
 
 .navbar-nav.social-buttons li span.bigread-social-btn .fa-facebook:hover {
-    color: #3B5998;
+    color: #bfbfbf;
 }
+
+.navbar-nav.social-buttons li span.bigread-social-btn .fa-linkedin:hover {
+    color: #bfbfbf;
+}
+
 
 @media(min-width:768px) {
     .navbar-custom {
         padding: 20px 0;
         border-bottom: 0;
-        letter-spacing: 1px;
-        background: 0 0;
         -webkit-transition: background .5s ease-in-out,padding .5s ease-in-out;
         -moz-transition: background .5s ease-in-out,padding .5s ease-in-out;
         transition: background .5s ease-in-out,padding .5s ease-in-out;
@@ -106,7 +123,6 @@
     .navbar-custom.top-nav-collapse {
         padding: 0;
         border-bottom: 1px solid rgba(255,255,255,.3);
-        background: #000;
     }
 }
 
@@ -429,7 +445,23 @@ ul.banner-social-buttons {
     }
 }
 
+.journalist-name {
+    font-weight: 200;
+    font-size: 30px;
+    font-family: 'Aguafina Script', cursive;
+    letter-spacing: 2px;
+    display: inline-block;
+    padding-bottom: 8px;
+}
 
+.journalist_description {
+    font-weight: 200;
+    font-size: 20px;
+    color: #9D1B1B;
+    font-family: 'Unica One', cursive;
+    padding-left: 30px;
+    display: inline-block;
+}
 
 
 body {
